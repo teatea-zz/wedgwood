@@ -1,0 +1,129 @@
+/* 1. Web Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Gowun+Batang:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+/* 2. Root Style Setting */
+:root {
+  /* Color */
+  --color-white: #fff;
+  --primay-color: #6b99cf;
+  --bg-color: #f5f1e6;
+  --point-color: #eebe74;
+  --text-color: #8f8875;
+  --text-yellow-color: #f1b75c; /* 컬렉션 옐로우 진한 컬러 */
+  --text-caption-y-color: #ae8649;
+  --text-caption-b-color: #405f84;
+
+  /* Font Size */
+  --fs-18: 1.125rem; /* 인덱스(컬렉션), 한글 본문*/
+  --fs-20: 1.25rem; /* 오버뷰 슬로건 사용 고민 */
+  --fs-28: 1.75rem; /* 히스토리 영어 본문 - Avant Garde */
+  --fs-h1-165: 10.3125rem; /* H1~H5 Garamond */
+  --fs-h2-112: 7rem;
+  --fs-h3-80: 5rem;
+  --fs-h4-64: 4rem;
+  --fs-h5-48: 3rem;
+  --fs-v-196: 12.25rem; /* 메뉴 히스토리 */
+  --fs-v-116: 7.25rem; /* 모달 오너먼트명 */
+  --fs-day: 6rem; /* 어드벤처 캘린더 */
+
+  /* Elements Interval 마진, 패딩 간격들 */
+  --el-section: 3.125rem;
+
+  /* Font Family */
+  --ff-main-en: 'Cormorant Garamond', serif;
+  --ff-sub01-en: 'Bon Vivant', serif;
+  --ff-sub02-en: 'ITC Avant Garde Gothic', serif;
+  --ff-sub03-en: 'PP Editorial New', serif;
+  --ff-body-en: 'Merriweather', serif;
+  --ff-kr: 'Gowun Batang', serif;
+}
+
+/* Font Face */
+@font-face {
+  font-family: 'PP Editorial New';
+  src: url(../font/PPEditorialNew-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Bon Vivant';
+  src: url(../font/BonVivant-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic';
+  src: url(../font/);
+}
+
+/* H1 ~ H5*/
+h1 {
+  font-family: var(--ff-main-en);
+  font-size: var(--fs-h1-165);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 100%; /* 165px */
+  letter-spacing: -1.65px;
+}
+
+h2 {
+  font-family: var(--ff-main-en);
+  font-size: var(--fs-h2-112);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.12px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: var(--ff-main-en);
+  font-size: var(--fs-h3-80);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+h4 {
+  font-family: var(--ff-main-en);
+  font-size: var(--fs-h4-64);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h5 {
+  font-family: var(--ff-main-en);
+  font-size: var(--fs-h5-48);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* 3. Reset Style */
+html {
+  scroll-behavior: smooth; /* 상단 위로가기 버튼 부드럽게  */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Merriweather', 'Gowun Batang', sans-serif;
+  background-color: var(--bg-color);
+  /* cursor: none; */
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+img {
+  display: block;
+}

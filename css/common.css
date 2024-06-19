@@ -1,0 +1,108 @@
+/* Section Style */
+.section_container {
+  width: 100%;
+  max-width: 1920px;
+  height: 1080px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.splash_container {
+  width: 100%;
+  max-width: 1920px;
+  height: 1080px;
+}
+
+/* Common Button Style */
+.cmn-btn {
+  width: 296px;
+  height: 240px;
+  border-bottom: 2px solid #fff;
+  font-family: 'PP Editorial New';
+  font-size: 96px;
+  color: #fff;
+  line-height: 160%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cmn-btn:hover {
+  background: var(--point-color);
+}
+
+.cmn-btn:click {
+  background: var(--bg-color);
+}
+
+.textonly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.Collection {
+  position: absolute;
+  left: 50px;
+  top: 90px;
+}
+
+.Collection-tb {
+  font-family: Merriweather;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: -0.18px;
+  color: var(--primay-color);
+}
+
+.Collection-ty {
+  font-family: Merriweather;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: -0.18px;
+  color: var(--point-color);
+}
+
+.Collection-tw {
+  font-family: Merriweather;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: -0.18px;
+  color: var(--bg-color);
+}
+
+.body-p1kr {
+  font-family: Gowun Batang;
+  font-size: var(--fs-18);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: -0.18px;
+  opacity: 0.8;
+}
+
+/* .scroll_snow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} */
+
+.lottie-iframe {
+  width: 52px;
+  top: 480px;
+  left: 952px;
+  position: absolute;
+  border: none;
+}

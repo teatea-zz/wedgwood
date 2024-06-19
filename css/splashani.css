@@ -1,0 +1,862 @@
+.splahL00 {
+  width: 1080px;
+  height: 206px;
+  top: 455px;
+  left: 435px;
+  position: absolute;
+}
+
+.moving-ellipse {
+  animation: moving-ellipse 6s linear forwards;
+}
+
+@keyframes moving-ellipse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.textyears {
+  animation: textyearop 6s linear forwards, textyearblur 3s linear forwards;
+}
+
+@keyframes textyearop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textyearblur {
+  0% {
+    filter: blur(2px);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
+
+/* --------------------------라인----------------------------- */
+.common-styles {
+  width: 2px;
+  flex-shrink: 0;
+  stroke-width: 1.5px;
+  stroke: var(--Point-Color, #eebe74);
+  stroke-linecap: round;
+  position: absolute;
+}
+
+.splahL01 {
+  height: 523px;
+  left: 435.75px;
+  top: 559px;
+}
+
+.movesplahL01 {
+  /* Base styles */
+  stroke-dasharray: 523;
+  stroke-dashoffset: 523;
+  /* Animation properties */
+  animation: movesplahL01 2s ease-in 1s alternate forwards;
+}
+
+@keyframes movesplahL01 {
+  0% {
+    stroke-dashoffset: 523;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL02 {
+  height: 494px;
+  top: 587px;
+  left: 458px;
+}
+
+.movesplahL02 {
+  stroke-dasharray: 494;
+  stroke-dashoffset: 494;
+  animation: movesplahL02 2s ease-in 1.5s alternate forwards;
+}
+/* animation-fill-mode : forwards 애니메이션이 끝난 후 그 지점에 그대로 있다. */
+
+@keyframes movesplahL02 {
+  0% {
+    stroke-dashoffset: 494;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL03 {
+  height: 467px;
+  top: 614.5px;
+  left: 524px;
+}
+
+.movesplahL03 {
+  stroke-dasharray: 467;
+  stroke-dashoffset: 467;
+  animation: movesplahL03 2s ease-in 2s alternate forwards;
+}
+
+@keyframes movesplahL03 {
+  0% {
+    stroke-dashoffset: 467;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL04 {
+  height: 461px;
+  top: 620px;
+  left: 546px;
+}
+
+.movesplahL04 {
+  stroke-dasharray: 461;
+  stroke-dashoffset: 461;
+  animation: movesplahL04 2s ease-in 2.5s alternate forwards;
+}
+
+@keyframes movesplahL04 {
+  0% {
+    stroke-dashoffset: 461;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL05 {
+  height: 448px;
+  top: 633.5px;
+  left: 612px;
+}
+
+.movesplahL05 {
+  stroke-dasharray: 448;
+  stroke-dashoffset: 448;
+  animation: movesplahL05 2s ease-in 3s alternate forwards;
+}
+
+@keyframes movesplahL05 {
+  0% {
+    stroke-dashoffset: 448;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    /* stroke: #eebe74; */
+  }
+}
+
+.splahL06 {
+  height: 444px;
+  top: 637.5px;
+  left: 634px;
+}
+
+.movesplahL06 {
+  stroke-dasharray: 444;
+  stroke-dashoffset: 444;
+  animation: movesplahL06 2s ease-in 3.5s alternate forwards;
+}
+
+@keyframes movesplahL06 {
+  0% {
+    stroke-dashoffset: 444;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL07 {
+  height: 434px;
+  top: 646px;
+  left: 700px;
+}
+
+.movesplahL07 {
+  stroke-dasharray: 434;
+  stroke-dashoffset: 434;
+  animation: movesplahL07 2s ease-in 4s alternate forwards;
+}
+
+@keyframes movesplahL07 {
+  0% {
+    stroke-dashoffset: 434;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL08 {
+  height: 433px;
+  top: 648.5px;
+  left: 722px;
+}
+
+.movesplahL08 {
+  stroke-dasharray: 433;
+  stroke-dashoffset: 433;
+  animation: movesplahL08 2s ease-in 4.5s alternate forwards;
+}
+
+@keyframes movesplahL08 {
+  0% {
+    stroke-dashoffset: 433;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL09 {
+  height: 426px;
+  top: 654.5px;
+  left: 788px;
+}
+
+.movesplahL09 {
+  stroke-dasharray: 426;
+  stroke-dashoffset: 426;
+  animation: movesplahL09 2s ease-in 5s alternate forwards;
+}
+
+@keyframes movesplahL09 {
+  0% {
+    stroke-dashoffset: 426;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL10 {
+  height: 425px;
+  top: 656px;
+  left: 810px;
+}
+
+.movesplahL10 {
+  stroke-dasharray: 425;
+  stroke-dashoffset: 425;
+  animation: movesplahL10 2s ease-in 5.5s alternate forwards;
+}
+
+@keyframes movesplahL10 {
+  0% {
+    stroke-dashoffset: 425;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL11 {
+  height: 421px;
+  top: 659px;
+  left: 876px;
+}
+
+.movesplahL11 {
+  stroke-dasharray: 421;
+  stroke-dashoffset: 421;
+  animation: movesplahL11 2s ease-in 6s alternate forwards;
+}
+
+@keyframes movesplahL11 {
+  0% {
+    stroke-dashoffset: 421;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL12 {
+  height: 422px;
+  top: 659.5px;
+  left: 898px;
+}
+
+.movesplahL12 {
+  stroke-dasharray: 422;
+  stroke-dashoffset: 422;
+  animation: movesplahL12 2s ease-in 6.5s alternate forwards;
+}
+
+@keyframes movesplahL12 {
+  0% {
+    stroke-dashoffset: 422;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL13 {
+  height: 419px;
+  top: 661px;
+  left: 964px;
+}
+
+.movesplahL13 {
+  stroke-dasharray: 419;
+  stroke-dashoffset: 419;
+  animation: movesplahL13 2s ease-in 7s alternate forwards;
+}
+
+@keyframes movesplahL13 {
+  0% {
+    stroke-dashoffset: 419;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL14 {
+  height: 421px;
+  top: 660.5px;
+  left: 986px;
+}
+
+.movesplahL14 {
+  stroke-dasharray: 421;
+  stroke-dashoffset: 421;
+  animation: movesplahL14 2s ease-in 7.5s alternate forwards;
+}
+
+@keyframes movesplahL14 {
+  0% {
+    stroke-dashoffset: 419;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL15 {
+  height: 420px;
+  top: 660px;
+  left: 1052px;
+}
+
+.movesplahL15 {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  animation: movesplahL15 2s ease-in 8s alternate forwards;
+}
+
+@keyframes movesplahL15 {
+  0% {
+    stroke-dashoffset: 420;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL16 {
+  height: 422px;
+  top: 659px;
+  left: 1074px;
+}
+
+.movesplahL16 {
+  stroke-dasharray: 422;
+  stroke-dashoffset: 422;
+  animation: movesplahL16 2s ease-in 8.5s alternate forwards;
+}
+
+@keyframes movesplahL16 {
+  0% {
+    stroke-dashoffset: 422;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL17 {
+  height: 425px;
+  top: 656px;
+  left: 1140px;
+}
+
+.movesplahL17 {
+  stroke-dasharray: 425;
+  stroke-dashoffset: 425;
+  animation: movesplahL17 2s ease-in 9s alternate forwards;
+}
+
+@keyframes movesplahL17 {
+  0% {
+    stroke-dashoffset: 425;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL18 {
+  height: 427px;
+  top: 654px;
+  left: 1162px;
+}
+
+.movesplahL18 {
+  stroke-dasharray: 427;
+  stroke-dashoffset: 427;
+  animation: movesplahL18 2s ease-in 9.5s alternate forwards;
+}
+
+@keyframes movesplahL18 {
+  0% {
+    stroke-dashoffset: 427;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL19 {
+  height: 433px;
+  top: 648.5px;
+  left: 1228px;
+}
+
+.movesplahL19 {
+  stroke-dasharray: 433;
+  stroke-dashoffset: 433;
+  animation: movesplahL19 2s ease-in 10s alternate forwards;
+}
+
+@keyframes movesplahL19 {
+  0% {
+    stroke-dashoffset: 433;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL20 {
+  height: 434px;
+  top: 647px;
+  left: 1250px;
+}
+
+.movesplahL20 {
+  stroke-dasharray: 434;
+  stroke-dashoffset: 434;
+  animation: movesplahL20 2s ease-in 10.5s alternate forwards;
+}
+
+@keyframes movesplahL20 {
+  0% {
+    stroke-dashoffset: 434;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL21 {
+  height: 444px;
+  top: 637.5px;
+  left: 1316px;
+}
+
+.movesplahL21 {
+  stroke-dasharray: 444;
+  stroke-dashoffset: 444;
+  animation: movesplahL21 2s ease-in 11s alternate forwards;
+}
+
+@keyframes movesplahL21 {
+  0% {
+    stroke-dashoffset: 444;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL22 {
+  height: 448px;
+  top: 633.5px;
+  left: 1338px;
+}
+
+.movesplahL22 {
+  stroke-dasharray: 448;
+  stroke-dashoffset: 448;
+  animation: movesplahL22 2s ease-in 11.5s alternate forwards;
+}
+
+@keyframes movesplahL22 {
+  0% {
+    stroke-dashoffset: 448;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL23 {
+  height: 461px;
+  top: 620px;
+  left: 1404px;
+}
+
+.movesplahL23 {
+  stroke-dasharray: 461;
+  stroke-dashoffset: 461;
+  animation: movesplahL23 2s ease-in 12s alternate forwards;
+}
+
+@keyframes movesplahL23 {
+  0% {
+    stroke-dashoffset: 461;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL24 {
+  height: 467px;
+  top: 614.5px;
+  left: 1426px;
+}
+
+.movesplahL24 {
+  stroke-dasharray: 467;
+  stroke-dashoffset: 467;
+  animation: movesplahL24 2s ease-in 12.5s alternate forwards;
+}
+
+@keyframes movesplahL24 {
+  0% {
+    stroke-dashoffset: 467;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL25 {
+  height: 494px;
+  top: 587px;
+  left: 1492px;
+}
+
+.movesplahL25 {
+  stroke-dasharray: 494;
+  stroke-dashoffset: 494;
+  animation: movesplahL25 2s ease-in 13s alternate forwards;
+}
+
+@keyframes movesplahL25 {
+  0% {
+    stroke-dashoffset: 494;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.splahL26 {
+  height: 522px;
+  top: 559px;
+  left: 1514.22px;
+}
+
+.movesplahL26 {
+  stroke-dasharray: 522;
+  stroke-dashoffset: 522;
+  animation: movesplahL26 2s ease-in 13.5s alternate forwards;
+}
+
+@keyframes movesplahL26 {
+  0% {
+    stroke-dashoffset: 522;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #eebe74;
+  }
+}
+
+.spsnowStar {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.spsnowStar > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.spsnowStar01 {
+  top: 730px; /* 01~04 1set::60px씩 거리 두고 보여지게 함 */
+  left: 470px;
+  position: absolute;
+}
+
+.spsnowStar02 {
+  top: 790px;
+  left: 470px;
+  position: absolute;
+}
+
+.spsnowStar03 {
+  top: 850px;
+  left: 470px;
+  position: absolute;
+}
+
+.spsnowStar04 {
+  top: 910px;
+  left: 470px;
+  position: absolute;
+}
+
+.spsnowStar05 {
+  top: 690px; /* 09~12 3set::60px씩 거리 두고 보여지게 함 */
+  left: 647px;
+  position: absolute;
+}
+
+.spsnowStar06 {
+  top: 780px;
+  left: 647px;
+  position: absolute;
+}
+
+.spsnowStar07 {
+  top: 840px;
+  left: 647px;
+  position: absolute;
+}
+
+.spsnowStar08 {
+  top: 900px;
+  left: 647px;
+  position: absolute;
+}
+
+.spsnowStar09 {
+  top: 750px; /* 05~08 2set::60px씩 거리 두고 보여지게 함 */
+  left: 823px;
+  position: absolute;
+}
+
+.spsnowStar10 {
+  top: 810px;
+  left: 823px;
+  position: absolute;
+}
+
+.spsnowStar11 {
+  top: 870px;
+  left: 823px;
+  position: absolute;
+}
+
+.spsnowStar12 {
+  top: 960px;
+  left: 823px;
+  position: absolute;
+}
+
+.spsnowStar13 {
+  top: 710px; /* 13~16 4set::60px씩 거리 두고 보여지게 함 */
+  left: 999px;
+  position: absolute;
+}
+
+.spsnowStar14 {
+  top: 800px;
+  left: 999px;
+  position: absolute;
+}
+
+.spsnowStar15 {
+  top: 860px;
+  left: 999px;
+  position: absolute;
+}
+
+.spsnowStar16 {
+  top: 920px;
+  left: 999px;
+  position: absolute;
+}
+
+.spsnowStar17 {
+  top: 740px; /* 17~20 5set::60px씩 거리 두고 보여지게 함 */
+  left: 1263px;
+  position: absolute;
+}
+
+.spsnowStar18 {
+  top: 800px;
+  left: 1263px;
+  position: absolute;
+}
+
+.spsnowStar19 {
+  top: 860px;
+  left: 1263px;
+  position: absolute;
+}
+
+.spsnowStar20 {
+  top: 950px;
+  left: 1263px;
+  position: absolute;
+}
+
+.spsnowStar21 {
+  top: 660px; /* 21~24 6set::60px씩 거리 두고 보여지게 함 */
+  left: 1439px;
+  position: absolute;
+}
+
+.spsnowStar22 {
+  top: 720px;
+  left: 1439px;
+  position: absolute;
+}
+
+.spsnowStar23 {
+  top: 780px;
+  left: 1439px;
+  position: absolute;
+}
+
+.spsnowStar24 {
+  top: 840px;
+  left: 1439px;
+  position: absolute;
+}

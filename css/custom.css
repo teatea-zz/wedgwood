@@ -1,0 +1,1529 @@
+/* Header Style */
+header {
+  width: 100%;
+  max-width: 1920px;
+  height: 90px;
+  position: fixed;
+  align-items: center;
+  /* background: rgba(255, 255, 255, 0.6); */
+  backdrop-filter: blur(20px);
+  /* border-bottom: 1px solid #F6F0E0; */
+  z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header.active {
+  transform: translateY(-100%);
+}
+
+nav {
+  width: 100%;
+  height: 90px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Menu Style */
+#menuIcon {
+  cursor: pointer;
+}
+
+#menu {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#menu li {
+  list-style-type: none;
+}
+
+#menu li a:hover {
+  color: var(--point-color);
+}
+
+#menu .menu_img {
+  width: 106px;
+  display: inline;
+}
+
+#menu .menu_text {
+  color: var(--primay-color);
+  text-align: center;
+  font-family: var(--ff-main-en);
+  font-size: var(--fs-h2-112);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 100%; /* 132px */
+  letter-spacing: -1.32px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu .menu_pattern {
+  width: 1020px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  z-index: -999;
+  opacity: 0;
+  animation: showPattern 2.5s ease forwards;
+}
+
+@keyframes showPattern {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+/* Splash Style */
+.splash {
+  width: 100%;
+  height: 1080px;
+  position: relative;
+  align-items: center;
+  background: linear-gradient(#fff, #f5f1e6);
+}
+
+.textyears {
+  position: absolute;
+  left: 742px;
+  top: 410px;
+}
+
+/* Section01 Overview Style */
+.section01 {
+  width: 100%;
+  height: 1080px;
+  background: #f5f1e6;
+  position: relative;
+  overflow: hidden;
+}
+
+#overviewText01 {
+  position: absolute;
+  top: 205px;
+  left: 380px;
+  color: var(--primay-color);
+}
+
+.englandlogo {
+  position: absolute;
+  top: 176px;
+  left: 901px;
+}
+
+#overviewText02 {
+  position: absolute;
+  top: 236px;
+  left: 1100px;
+  color: var(--primay-color);
+}
+
+#overviewText03 {
+  position: absolute;
+  top: 206px;
+  left: 1366px;
+  color: var(--primay-color);
+}
+
+.mainImg {
+  position: absolute;
+  top: 412px;
+  left: 0px;
+}
+
+/* Section03 History Style */
+#s03t01 {
+  position: absolute;
+  top: 325px;
+  left: 365px;
+  color: var(--primay-color);
+}
+
+#s03t02 {
+  position: absolute;
+  top: 325px;
+  left: 950px;
+  color: var(--primay-color);
+}
+
+#s03t03 {
+  position: absolute;
+  top: 325px;
+  left: 1196px;
+  color: var(--primay-color);
+  /* text-align: center; */
+}
+
+#s03t04 {
+  position: absolute;
+  top: 490px;
+  left: 569px;
+  color: var(--primay-color);
+}
+
+#s03t05 {
+  position: absolute;
+  top: 490px;
+  left: 786px;
+  color: var(--primay-color);
+}
+
+#s03t06 {
+  position: absolute;
+  top: 490px;
+  left: 986px;
+  color: var(--primay-color);
+}
+
+#s03t07 {
+  position: absolute;
+  top: 697.5px;
+  left: 761px;
+  color: var(--primay-color);
+}
+
+/* Section04 History Style */
+
+#s04t01 {
+  position: absolute;
+  top: 458px;
+  left: 455px;
+  color: var(--primay-color);
+}
+
+#s04t02 {
+  position: absolute;
+  top: 665px;
+  left: 486px;
+  color: var(--primay-color);
+}
+
+#s04t03 {
+  position: absolute;
+  top: 723px;
+  left: 598px;
+  color: var(--primay-color);
+}
+
+.s04Img01 {
+  position: absolute;
+  top: 381px;
+  left: 516px;
+}
+
+.s04Img02 {
+  position: absolute;
+  top: 399px;
+  left: 644px;
+}
+
+.s04Img03 {
+  position: absolute;
+  top: 212px;
+  left: 802px;
+}
+
+/* Section05 History Style */
+.s05Img01 {
+  width: 430px;
+  position: absolute;
+  top: 265px;
+  left: 745px;
+}
+
+#s05t01 {
+  position: absolute;
+  top: 661px;
+  left: 414px;
+  color: var(--text-color);
+}
+
+#s05t02 {
+  position: absolute;
+  top: 758px;
+  left: 345px;
+  color: var(--text-color);
+}
+
+#s05t03 {
+  position: absolute;
+  top: 855px;
+  left: 446px;
+  color: var(--text-color);
+}
+
+/* Section06 History Style */
+.s06Img01 {
+  width: 244px;
+  position: absolute;
+  top: 180px;
+  left: 838px;
+}
+
+#s06t01 {
+  position: absolute;
+  top: 596px;
+  left: 556px;
+  color: var(--text-color);
+}
+
+#s06t02 {
+  position: absolute;
+  top: 693px;
+  left: 483px;
+  color: var(--text-color);
+}
+
+#s06t03 {
+  position: absolute;
+  top: 790px;
+  left: 195px;
+  color: var(--text-color);
+}
+
+#s06t04 {
+  position: absolute;
+  top: 887px;
+  left: 225px;
+  color: var(--text-color);
+}
+
+/* Section07~10 시그니처 컬러 블루 Style */
+
+#s07t01,
+#s07t02 {
+  color: var(--primay-color);
+}
+
+.section08 {
+  background-color: var(--bg-color);
+  z-index: 4;
+}
+
+#s08t01 {
+  position: absolute;
+  left: 212px;
+  top: -117px;
+  color: var(--primay-color);
+  font-family: Cormorant Garamond;
+  font-size: 354px;
+  font-weight: 700;
+  letter-spacing: -1.77px;
+  z-index: 4;
+}
+
+#s08t02 {
+  position: absolute;
+  left: -163px;
+  top: 706px;
+  color: var(--primay-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 354px;
+  font-weight: 700;
+  letter-spacing: -1.77px;
+  white-space: nowrap; /* 줄바꿈하지 않음 */
+  z-index: 4;
+}
+
+.s08Img01 {
+  width: 600px;
+  position: absolute;
+  left: 673px;
+  top: 241px;
+  z-index: 4;
+}
+
+.bluebg {
+  /* background-color: var(--primay-color); */
+  z-index: 5;
+}
+
+#s09t01 {
+  position: absolute;
+  left: 212px;
+  top: -117px;
+  color: var(--bg-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 354px;
+  font-weight: 700;
+  letter-spacing: -1.77px;
+  z-index: 5;
+}
+
+#s09t02 {
+  position: absolute;
+  left: -163px;
+  top: 706px;
+  color: var(--bg-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 354px;
+  font-weight: 700;
+  letter-spacing: -1.77px;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+.s09Img01 {
+  width: 496px;
+  position: absolute;
+  left: 688px;
+  top: 318px;
+  z-index: 5;
+}
+
+.section10 {
+  background-color: var(--primay-color);
+  z-index: 6;
+}
+
+.s10Img01 {
+  width: 588px;
+  position: absolute;
+  left: 634px;
+  top: 259px;
+  z-index: 6;
+}
+
+/* #s10t01 {
+  position: absolute;
+  left: 212px;
+  top: -215px;
+  color: var(--bg-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 354px;
+  font-weight: 700;
+  letter-spacing: -1.77px;
+  z-index: 6;
+}
+
+#s10t02 {
+  position: absolute;
+  left: -163px;
+  top: 834px;
+  color: var(--bg-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 354px;
+  font-weight: 700;
+  letter-spacing: -1.77px;
+  white-space: nowrap;
+  z-index: 6;
+} */
+
+/* Section11~14 매그놀리아 블라썸 Style */
+.section11,
+.section12,
+.section13,
+.section14 {
+  background-color: var(--primay-color);
+}
+
+#s11t01,
+#s11t02 {
+  color: var(--bg-color);
+}
+
+.s12Img01 {
+  width: 690px;
+  position: absolute;
+  left: 130px;
+  top: 305px;
+}
+
+#s12t01 {
+  position: absolute;
+  left: 948px;
+  top: 395px;
+  color: var(--bg-color);
+}
+
+#s12t02 {
+  position: absolute;
+  left: 948px;
+  top: 492px;
+  color: var(--bg-color);
+}
+
+#s12t03 {
+  position: absolute;
+  left: 948px;
+  top: 589px;
+  color: var(--bg-color);
+}
+
+.s13Img01 {
+  width: 217px;
+  position: absolute;
+  left: 852px;
+  top: 170px;
+}
+
+.s13text {
+  position: absolute;
+  left: 327px;
+  top: 523px;
+  color: var(--bg-color);
+  text-align: center;
+}
+
+.section14 .Collection {
+  color: var(--bg-color);
+}
+
+.s14text-body {
+  position: absolute;
+  left: 82px;
+  top: 497px;
+  color: var(--bg-color);
+}
+
+.section14 .body-p1kr {
+  position: absolute;
+  left: 82px;
+  top: 883px;
+  color: var(--bg-color);
+}
+
+.s14Img01 {
+  width: 1216px;
+  position: absolute;
+  left: 774px;
+  top: 0px;
+}
+
+/* Section15~17 매그놀리아 블라썸 Style */
+
+.section15 {
+  background-color: var(--primay-color);
+}
+
+.s15Img01 {
+  width: 1018px;
+  position: absolute;
+  left: 442px;
+  top: 31px;
+}
+
+.s15Img02 {
+  position: absolute;
+  left: 0px;
+  top: 360px;
+}
+
+.s15text {
+  position: absolute;
+  left: 135px;
+  top: 503px;
+  color: var(--primay-color);
+  display: flex;
+}
+
+.s15Img03 {
+  width: 260px;
+  position: absolute;
+  left: 813px;
+  top: 408px;
+}
+
+.s15text2 {
+  position: absolute;
+  left: 1113px;
+  top: 493px;
+  color: var(--primay-color);
+  display: flex;
+}
+
+.section16 .Collection {
+  color: var(--primay-color);
+}
+
+.s16text-body {
+  position: absolute;
+  left: 125px;
+  top: 503px;
+  color: var(--primay-color);
+}
+
+.section16 .body-p1kr {
+  position: absolute;
+  left: 125px;
+  top: 889px;
+  color: var(--primay-color);
+}
+
+.s16Img01 {
+  width: 698px;
+  position: absolute;
+  left: 1030px;
+  top: 35px;
+}
+
+.section17 .Collection {
+  color: var(--primay-color);
+}
+
+.s17text-body {
+  position: absolute;
+  left: 125px;
+  top: 572px;
+  color: var(--primay-color);
+}
+
+.section17 .body-p1kr {
+  position: absolute;
+  left: 125px;
+  top: 842px;
+  color: var(--primay-color);
+}
+
+.s17Img01 {
+  width: 526px;
+  position: absolute;
+  left: 1124px;
+  top: 20px;
+}
+
+/* Section18~22 플로렌타인 터콰이즈 Style */
+.s18Img01 {
+  width: 985px;
+  position: absolute;
+  left: -493px;
+  top: 50px;
+  background-blend-mode: multiply;
+}
+
+.s18Img02 {
+  width: 985px;
+  position: absolute;
+  left: 1427px;
+  top: 50px;
+  background-blend-mode: multiply;
+}
+
+#s18t01 {
+  color: var(--primay-color);
+}
+
+.section19 .Collection {
+  color: var(--primay-color);
+}
+
+.s19text-body {
+  position: absolute;
+  left: 1061px;
+  top: 438px;
+  color: var(--primay-color);
+}
+
+.section19 .body-p1kr {
+  position: absolute;
+  left: 1061px;
+  top: 824px;
+  color: var(--primay-color);
+}
+
+.s19Img01 {
+  width: 977px;
+  position: absolute;
+  left: -39px;
+  top: 380px;
+}
+
+.section20 .Collection {
+  color: var(--primay-color);
+}
+
+.s20text-body {
+  position: absolute;
+  left: 98px;
+  top: 457px;
+  color: var(--primay-color);
+}
+
+.section20 .body-p1kr {
+  position: absolute;
+  left: 98px;
+  top: 901px;
+  color: var(--primay-color);
+}
+
+.s20Img01 {
+  width: 887px;
+  position: absolute;
+  left: 1203px;
+  top: 137px;
+}
+
+.section21 .Collection {
+  color: var(--primay-color);
+  position: absolute;
+  left: 1212px;
+  top: 90px;
+}
+
+.s21text-body {
+  position: absolute;
+  left: 1133px;
+  top: 582px;
+  color: var(--primay-color);
+}
+
+.section21 .body-p1kr {
+  position: absolute;
+  left: 1133px;
+  top: 910px;
+  color: var(--primay-color);
+}
+
+.s21Img01 {
+  width: 998px;
+  position: absolute;
+  left: -26px;
+  top: -17px;
+}
+
+.section22 .Collection {
+  color: var(--primay-color);
+}
+
+.s22text-body {
+  position: absolute;
+  left: 102px;
+  top: 681px;
+  color: var(--primay-color);
+}
+
+.section22 .body-p1kr {
+  position: absolute;
+  left: 102px;
+  top: 893px;
+  color: var(--primay-color);
+}
+
+.s22Img01 {
+  width: 184px;
+  position: absolute;
+  left: 101px;
+  top: 559px;
+}
+
+.s22Img02 {
+  width: 960px;
+  position: absolute;
+  left: 960px;
+  top: -500px;
+}
+
+/* Section23~27 르네상스 골드 Style */
+
+#s23t01 {
+  /* color: #F2CB66; */
+  color: var(--point-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 1161px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -5.805px;
+  position: absolute;
+  left: 16px;
+  top: -163px;
+}
+
+.s23Img01 {
+  width: 770px;
+  position: absolute;
+  left: 930px;
+  top: -398px;
+}
+
+.s23Img01-1 {
+  width: 770px;
+  position: absolute;
+  left: 2913px;
+  top: -398px;
+}
+
+.s23Img02 {
+  width: 354px;
+  /* transform: rotate(-26.498deg); */
+  position: absolute;
+  left: 970px;
+  top: 94px;
+}
+
+.s23Img03 {
+  width: 354px;
+  /* transform: rotate(-26.498deg); */
+  position: absolute;
+  left: 1564px;
+  top: 94px;
+}
+
+/* Section24~27 르.골 가로 스크롤 Style */
+.rg_horscroll {
+  width: 400%;
+  height: 100vh;
+  display: flex;
+  /* overflow-x: visible; */
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.horpanel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: cetner;
+  align-items: center;
+  position: relative;
+}
+
+#s24t01 {
+  color: var(--point-color);
+  position: absolute;
+  top: 141px;
+}
+
+.s24Img01 {
+  width: 1337px;
+  position: absolute;
+  left: 294px;
+  top: 301px;
+}
+
+.section25 .Collection {
+  color: var(--point-color);
+}
+
+.s25text-body {
+  position: absolute;
+  left: 72px;
+  top: 369px;
+  color: var(--point-color);
+}
+
+.section25 .body-p1kr {
+  position: absolute;
+  left: 72px;
+  top: 813px;
+  color: #ae8649;
+}
+
+.s25Img01 {
+  width: 1162px;
+  position: absolute;
+  left: 839px;
+  top: 271px;
+}
+
+.section26 .Collection {
+  color: var(--point-color);
+}
+
+.s26text-body {
+  position: absolute;
+  left: 112px;
+  top: 368px;
+  color: var(--point-color);
+}
+
+.body-p1kr {
+  position: absolute;
+  left: 112px;
+  top: 812px;
+  color: #ae8649;
+}
+
+.s26Img01 {
+  width: 782px;
+  position: absolute;
+  left: 1144px;
+  top: 218px;
+}
+
+.section27 .Collection {
+  color: var(--point-color);
+}
+
+.s27text-body {
+  position: absolute;
+  left: 1052px;
+  top: 360px;
+  color: var(--point-color);
+}
+
+.section27 .body-p1kr {
+  position: absolute;
+  left: 1052px;
+  top: 804px;
+  color: #ae8649;
+}
+
+.s27Img01 {
+  width: 796px;
+  position: absolute;
+  left: 113px;
+  top: 119px;
+}
+
+.s27Img02 {
+  width: 128px;
+  position: absolute;
+  left: 1641px;
+  top: 488px;
+}
+
+/* Section28~31 옐로우 리본 Style */
+#s28t01 {
+  position: absolute;
+  top: 231px;
+  color: var(--point-color);
+}
+
+.s28Img01 {
+  width: 715px;
+  position: absolute;
+  left: 568px;
+  top: 472px;
+}
+
+.s28Img02 {
+  width: 343px;
+  position: absolute;
+  left: -150px;
+  top: 699px;
+}
+
+.s28Img03 {
+  width: 321px;
+  position: absolute;
+  left: 279px;
+  top: 649px;
+}
+
+.s28Img04 {
+  width: 343px;
+  position: absolute;
+  left: 1262px;
+  top: 699px;
+}
+
+.s28Img05 {
+  width: 321px;
+  position: absolute;
+  left: 1691px;
+  top: 649px;
+}
+
+.section29 .Collection {
+  color: var(--point-color);
+}
+
+.s29text-body {
+  position: absolute;
+  left: 960px;
+  top: 480px;
+  color: var(--point-color);
+}
+
+.section29 .body-p1kr {
+  position: absolute;
+  left: 960px;
+  top: 808px;
+  color: #ae8649;
+}
+
+.s29Img01 {
+  width: 734px;
+  position: absolute;
+  left: 105px;
+  top: 380px;
+}
+
+.section30 .Collection {
+  color: var(--point-color);
+}
+
+.s30text-body {
+  position: absolute;
+  left: 72px;
+  top: 496px;
+  color: var(--point-color);
+}
+
+.section30 .body-p1kr {
+  position: absolute;
+  left: 82px;
+  top: 882px;
+  color: #ae8649;
+}
+
+.s30Img01 {
+  width: 1264px;
+  position: absolute;
+  left: 1066px;
+  top: 112px;
+}
+
+.s30Img02 {
+  width: 638px;
+  position: absolute;
+  left: 1132px;
+  top: 124px;
+}
+
+.section31 .Collection {
+  color: var(--point-color);
+}
+
+.s31text-body {
+  position: absolute;
+  left: 62px;
+  top: 721px;
+  color: var(--point-color);
+}
+
+.section31 .body-p1kr {
+  position: absolute;
+  left: 62px;
+  top: 991px;
+  color: #ae8649;
+}
+
+.s31Img01 {
+  width: 960px;
+  position: absolute;
+  left: 960px;
+  top: -192px;
+}
+
+.s31Img02 {
+  width: 198px;
+  position: absolute;
+  left: 80px;
+  top: 627px;
+}
+
+/* Section32~39 윈터 화이트 Style */
+.section32 .Collection {
+  color: var(--primay-color);
+}
+
+#s32t01 {
+  color: var(--primay-color);
+  position: absolute;
+  left: 877px;
+  top: 345px;
+  display: flex;
+}
+
+#s32t02 {
+  color: var(--primay-color);
+  position: absolute;
+  left: 845px;
+  top: 393px;
+  display: flex;
+}
+
+#s32t03 {
+  color: var(--primay-color);
+  position: absolute;
+  left: 752px;
+  top: 432px;
+  display: flex;
+}
+
+#s32t04 {
+  color: var(--primay-color);
+  position: absolute;
+  left: 702px;
+  top: 484px;
+  font-family: Cormorant Garamond;
+  font-size: 132px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.98px;
+  display: flex;
+}
+
+.s32Img01 {
+  width: 590px;
+  position: absolute;
+  left: -10px;
+  top: -365px;
+}
+
+.s32Img02 {
+  width: 590px;
+  position: absolute;
+  left: -186px;
+  top: 244px;
+}
+
+.s32Img03 {
+  width: 590px;
+  position: absolute;
+  left: -10px;
+  top: 856px;
+}
+
+.s32Img04 {
+  width: 590px;
+  position: absolute;
+  left: 1339px;
+  top: -373px;
+}
+
+.s32Img05 {
+  width: 590px;
+  position: absolute;
+  left: 1514px;
+  top: 244px;
+}
+
+.s32Img06 {
+  width: 590px;
+  position: absolute;
+  left: 1339px;
+  top: 856px;
+}
+
+.s32Img07 {
+  width: 194px;
+  position: absolute;
+  /* left: 1057px; */
+  top: 619px;
+  align-items: center;
+  background-blend-mode: darken;
+}
+
+.s32Img08 {
+  width: 68px;
+  position: absolute;
+  left: 932px;
+  top: 256px;
+}
+
+#s33t01 {
+  position: absolute;
+  left: 582px;
+  top: 375px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: var(--primay-color);
+}
+
+#s33t02 {
+  position: absolute;
+  left: 732px;
+  top: 375px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: var(--primay-color);
+}
+
+#s33t03 {
+  position: absolute;
+  left: 525px;
+  top: 521px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: var(--primay-color);
+}
+
+#s33t04 {
+  position: absolute;
+  left: 813px;
+  top: 521px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: var(--primay-color);
+}
+
+#s33t05 {
+  position: absolute;
+  left: 1152px;
+  top: 518px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: var(--primay-color);
+}
+
+.s34text01-align {
+  position: absolute;
+  left: 406px;
+  top: 276px;
+}
+
+#s34t01 {
+  color: var(--primay-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 140px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.4px;
+  /* text-transform: capitalize; */
+  display: flex;
+}
+
+.s34text02-align {
+  position: absolute;
+  left: 760px;
+  top: 313px;
+}
+
+#s34t02 {
+  color: var(--primay-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+  text-transform: capitalize;
+}
+
+#s34t03,
+#s34t04 {
+  color: var(--primay-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 98px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.98px;
+  text-transform: capitalize;
+}
+
+.s34text02 {
+  position: absolute;
+  left: 570px;
+  top: 474px;
+}
+
+#s34t05 {
+  color: var(--primay-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 92%; /* 77.28px */
+  letter-spacing: -0.84px;
+  text-transform: capitalize;
+}
+
+.s34text03-align {
+  position: absolute;
+  left: 750px;
+  top: 431px;
+  color: var(--primay-color);
+  font-family: 'Cormorant Garamond';
+  font-size: 140px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 92%;
+  letter-spacing: -1.4px;
+  /* text-transform: capitalize; */
+  display: flex;
+}
+
+.s34Img01 {
+  width: 664px;
+  position: absolute;
+  left: 628px;
+  top: 599px;
+}
+
+.section35 .Collection {
+  color: var(--primay-color);
+}
+
+.s35text-body {
+  position: absolute;
+  left: 72px;
+  top: 387px;
+  color: var(--primay-color);
+}
+
+.section35 .body-p1kr {
+  position: absolute;
+  left: 72px;
+  top: 773px;
+  color: var(--primay-color);
+}
+
+.s35Img01 {
+  width: 615px;
+  position: absolute;
+  left: 1060px;
+  top: 570px;
+  transform: rotate(1.675deg);
+}
+
+.s35Img02 {
+  width: 506px;
+  position: absolute;
+  left: 1398px;
+  top: 289px;
+}
+
+.section36 .Collection {
+  color: var(--primay-color);
+}
+
+.s36text-body {
+  position: absolute;
+  left: 72px;
+  top: 540px;
+  color: var(--primay-color);
+}
+
+.section36 .body-p1kr {
+  position: absolute;
+  left: 72px;
+  top: 868px;
+  color: var(--primay-color);
+}
+
+.s36Img01 {
+  width: 532px;
+  position: absolute;
+  left: 1062px;
+  top: 374px;
+  transform: rotate(42deg);
+  z-index: 10;
+}
+
+.s36Img02 {
+  width: 532px;
+  position: absolute;
+  left: 1350px;
+  top: 20px;
+  transform: rotate(10deg);
+}
+
+.section37 .Collection {
+  color: var(--primay-color);
+}
+
+.s37text-body {
+  position: absolute;
+  left: 62px;
+  top: 721px;
+  color: var(--primay-color);
+}
+
+.section37 .body-p1kr {
+  position: absolute;
+  left: 62px;
+  top: 991px;
+  color: var(--primay-color);
+}
+
+.s37Img01 {
+  width: 960px;
+  position: absolute;
+  left: 960px;
+  top: 0px;
+}
+
+.s37Img02 {
+  width: 97px;
+  position: absolute;
+  left: 663px;
+  top: 791px;
+}
+
+/* Section40 Outro 크리스마스 어드벤처 캘린더 라인 시작 */
+.section40 {
+  background-color: var(--primay-color);
+}
+
+#s40t01 {
+  position: absolute;
+  left: 556px;
+  top: 317px;
+  color: var(--bg-color);
+}
+
+#s40t02 {
+  position: absolute;
+  left: 812px;
+  top: 317px;
+  color: var(--bg-color);
+}
+
+#s40t03 {
+  position: absolute;
+  left: 1046px;
+  top: 317px;
+  color: var(--bg-color);
+}
+
+#s40t04 {
+  position: absolute;
+  left: 1264px;
+  top: 317px;
+  color: var(--bg-color);
+}
+
+#s40t05 {
+  position: absolute;
+  left: 459px;
+  top: 458px;
+  color: var(--bg-color);
+}
+
+#s40t06 {
+  position: absolute;
+  left: 754px;
+  top: 458px;
+  color: var(--bg-color);
+}
+
+#s40t07 {
+  position: absolute;
+  left: 968px;
+  top: 458px;
+  color: var(--bg-color);
+}
+
+#s40t08 {
+  position: absolute;
+  left: 1188px;
+  top: 458px;
+  color: var(--bg-color);
+}
+
+/* Section41 Outro 어드벤처 캘린더 */
+.section41 {
+  background-color: var(--primay-color);
+  position: relative;
+}
+
+.aCalendar {
+  padding: 42px 32px;
+  /* row-gap: 8px; */
+}
+
+/* .aCalendar img {
+  display: none;
+} */
+
+.acalTabs {
+  display: flex;
+  column-gap: 16px;
+  flex-wrap: wrap;
+}
+
+.acalday {
+  text-align: center;
+  position: absolute;
+}
+
+.ornaments {
+  position: relative;
+}
+
+.ornamentL {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 10;
+}
+
+.modal-closeL {
+  width: 68px;
+  height: 68px;
+  top: 32px;
+  left: 821px;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid var(--primay-color);
+  background-color: #fff;
+}
+
+.ornamentR {
+  top: 0px;
+  left: 944px;
+  position: absolute;
+  z-index: 10;
+}
+
+.aCaline1 {
+  top: 42px;
+  left: 336px;
+  position: absolute;
+}
+
+.aCaline2 {
+  top: 42px;
+  left: 648px;
+  position: absolute;
+}
+
+.aCaline3 {
+  top: 42px;
+  left: 960px;
+  position: absolute;
+}
+
+.aCaline4 {
+  top: 42px;
+  left: 1272px;
+  position: absolute;
+}
+
+.aCaline5 {
+  top: 42px;
+  left: 1584px;
+  position: absolute;
+}
+
+/* Section43 엔딩 로고(푸터) */
+.section43 {
+  background-color: var(--primay-color);
+}
+
+.ending1 {
+  top: 379px;
+  left: 926px;
+  position: absolute;
+}
+
+.ending2 {
+  top: 494px;
+  left: 722px;
+  position: absolute;
+}
+
+.ornaments {
+  top: 40.75px;
+  left: 24px;
+  position: absolute;
+}
